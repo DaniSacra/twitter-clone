@@ -1,8 +1,18 @@
-import { homedir } from 'os';
-import React from 'react';
 
-const Home: React.FC = () => {
-  return <h1>Hello World</h1>
+import React from 'react';
+import MainComponent from '../components/shared/MainComponent';
+import { useRouter } from 'next/router';
+
+const Storefront: React.FC = ({ children }) => {
+  const router = useRouter();
+  
+  return (
+    <>
+      <MainComponent>
+        <button onClick={() => router.push('Auth/Login')}>Login</button>
+      </MainComponent>
+    </>
+  )
 }
 
-export default Home;
+export default Storefront;
