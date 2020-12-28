@@ -2,15 +2,16 @@ import React from 'react';
 import { InputGroup, FormControl, Button, Row, Col } from 'react-bootstrap';
 import BlueBackground from '../shared/BlueBackground';
 
-// import AuthState from '../../dtos/AuthState';
-// import User from '../../dtos/User';
-// import { useState, useEffect, useRef } from 'react';
-// import { useRouter } from 'next/router';
-// import { useDispatch, useSelector } from 'react-redux';
-// import { setLoggedUser } from '../../store/modules/auth/reducer';
-// import UsersService from '../../services/users';
-// import { toast } from 'react-toastify';
-// import Link from 'next/link';
+import AuthState from '../../dtos/AuthState';
+import User from '../../dtos/User';
+import { useState, useEffect, useRef } from 'react';
+import { useRouter } from 'next/router';
+import { useDispatch, useSelector } from 'react-redux';
+import { setLoggedUser } from '../../store/modules/auth/reducer';
+import UsersService from '../../services/users';
+import { toast } from 'react-toastify';
+import Link from 'next/link';
+
 interface LoginProps {
   titlePhrase: String;
   buttonPhrase: String;
